@@ -12,7 +12,7 @@ notes/index.html    /notes/
 css/main.css        one stylesheet, no CDNs
 robots.txt          allow all crawlers
 .nojekyll           disables Jekyll processing
-tools/serve.js      optional local preview server
+tools/serve.js      optional local preview server (gitignored — not published)
 ```
 
 ## Preview locally

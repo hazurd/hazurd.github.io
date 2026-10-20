@@ -1,3 +1,6 @@
+# Development tooling — stays local, never published
+tools/
+
 # Never publish these
 .env
 .env.*
