@@ -1,41 +1,46 @@
-# personal site
+# hazurd.github.io
 
-Static site served by GitHub Pages. No build step, no frameworks, no dependencies.
+Personal site, published via GitHub Pages at
+[https://hazurd.github.io](https://hazurd.github.io).
 
-## Structure
+Plain HTML/CSS. No build step, no frameworks, no dependencies.
 
-```
-index.html          home
-about/index.html    /about/
-notes/index.html    /notes/
-404.html            GitHub Pages uses this automatically
-css/main.css        one stylesheet, no CDNs
-robots.txt          allow all crawlers
-.nojekyll           disables Jekyll processing
-tools/serve.js      optional local preview server (gitignored — not published)
-```
+## Layout
 
-## Preview locally
+The site is currently a placeholder: the home page says the site is under
+construction, and `/about/` and `/notes/` are empty stubs. The real content is
+not decided yet.
 
-```bash
-node tools/serve.js        # http://127.0.0.1:8000
+```text
+/               index.html      "under construction" placeholder
+/about/         about/index.html
+/notes/         notes/index.html
+/404            404.html        served by GitHub Pages for unknown paths
+/css/main.css   shared stylesheet
 ```
 
-It binds to `127.0.0.1` only, so nothing is exposed while you are editing.
+Paths are absolute (`/about/`, `/css/main.css`), so pages work from any URL.
 
-## Publishing
-
-The repo is `hazurd/hazurd.github.io`, a username repo, so Pages serves it at
-`https://hazurd.github.io/` with no path prefix. Push to `main`; GitHub Pages
-serves the branch root. Deployments show up in the repo's **Insights → Pages** tab.
+Adding a page: create `<dir>/index.html`, link it in the nav on every page
+(the header is duplicated in `index.html`, `about/`, `notes/`, `404.html`), and
+add a nav link.
 
 ## Adding a note
 
-Create `notes/<date>-<slug>/index.html` and add a link in `notes/index.html`.
-Push — it is live on the next deploy.
+A note is a directory with an `index.html`: `notes/<date>-<slug>/index.html`.
+Then add a link to it in `notes/index.html`. The notes list currently has no
+styles of its own; it uses the browser's default list styling.
 
-## Notes on safety
+## Publishing
 
-- No analytics, cookies, or external scripts.
-- Nothing from this machine is exposed to the internet; GitHub serves the files.
-- Keep secrets, `.env`, and private keys out of the repo (see `.gitignore`).
+GitHub Pages serves the repository root. For a username repository
+(`<user>.github.io`) it publishes at `https://<user>.github.io/`, with no
+subpath. `.nojekyll` disables Jekyll processing.
+
+## Local preview
+
+```bash
+node tools/serve.js      # http://127.0.0.1:8000
+```
+
+`tools/serve.js` is a small static file server and is gitignored.

@@ -77,16 +77,10 @@ main {
   padding-top: 2rem;
 }
 
-.hero h1 {
+h1 {
   font-size: 1.75rem;
   margin: 0 0 0.5rem;
   letter-spacing: -0.015em;
-}
-
-h2 {
-  font-size: 1.1rem;
-  margin: 2.5rem 0 0.75rem;
-  letter-spacing: -0.01em;
 }
 
 p {
@@ -99,50 +93,10 @@ p {
   font-size: 0.9rem;
 }
 
-code {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.875em;
-}
-
-/* Rules come from the items, so an empty list draws nothing. */
-.project-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.project-list li {
-  display: flex;
-  gap: 1rem;
-  align-items: baseline;
-  padding: 0.75rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.project-list li:last-child {
-  border-bottom: 1px solid var(--border);
-}
-
-.project-list a {
-  font-weight: 600;
-}
-
-.project-list span {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
 footer {
   margin-top: 3rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.85rem;
-}
-
-@media (max-width: 620px) {
-  .project-list li {
-    flex-direction: column;
-    gap: 0.25rem;
-  }
 }
