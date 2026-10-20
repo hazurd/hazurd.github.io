@@ -1,0 +1,10 @@
+# Never publish these
+.env
+.env.*
+*.key
+*.pem
+id_rsa*
+node_modules/
+dist/
+.DS_Store
+*.log

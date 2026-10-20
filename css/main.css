@@ -1,0 +1,143 @@
+/* Minimal, no build step, no external fonts or CDNs. */
+
+:root {
+  --bg: #ffffff;
+  --fg: #1c1c1c;
+  --muted: #6b6b6b;
+  --accent: #2f5d50;
+  --border: #e3e3e3;
+  --measure: 62ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --fg: #e8e8e8;
+    --muted: #9b9b9b;
+    --accent: #8fcbb8;
+    --border: #2b2f36;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  max-width: 46rem;
+  padding: 0 1.25rem 3rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-weight: 650;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  padding-top: 2rem;
+}
+
+.hero h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+p {
+  max-width: var(--measure);
+  margin: 0.75rem 0;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875em;
+}
+
+.project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.project-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-list a {
+  font-weight: 600;
+}
+
+.project-list span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 620px) {
+  .project-list li {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
