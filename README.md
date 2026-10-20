@@ -25,8 +25,9 @@ It binds to `127.0.0.1` only, so nothing is exposed while you are editing.
 
 ## Publishing
 
-Push to `main`. GitHub Pages serves the branch root. Deployments show up in the
-repo's **Insights → Pages** tab.
+The repo is `hazurd/hazurd.github.io`, a username repo, so Pages serves it at
+`https://hazurd.github.io/` with no path prefix. Push to `main`; GitHub Pages
+serves the branch root. Deployments show up in the repo's **Insights → Pages** tab.
 
 ## Adding a note
 
