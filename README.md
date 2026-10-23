@@ -7,13 +7,14 @@ Plain HTML/CSS. No build step, no frameworks, no dependencies.
 
 ## Layout
 
-The site is currently a placeholder: the home page says the site is under
-construction, and `/about/` and `/notes/` are empty stubs. The real content is
-not decided yet.
+The home page is a consulting landing page (Kubernetes & GitOps services),
+`/work/` lists service packages and pricing, `/about/` is a bio, and
+`/notes/` is a stub for future notes.
 
 ```text
-/               index.html      "under construction" placeholder
+/               index.html      consulting landing page
 /about/         about/index.html
+/work/          work/index.html services & pricing
 /notes/         notes/index.html
 /404            404.html        served by GitHub Pages for unknown paths
 /css/main.css   shared stylesheet

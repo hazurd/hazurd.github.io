@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>hazurd — personal site</title>
-    <meta name="description" content="Under construction. Nothing here yet." />
+    <title>hazurd — Kubernetes &amp; GitOps consulting</title>
+    <meta name="description" content="Kubernetes, GitOps, CI/CD, and observability consulting. Clusters and pipelines that actually work, with docs your team can run." />
     <link rel="canonical" href="https://hazurd.github.io/" />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%E2%9C%A6%3C/svg%3E" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="/">hazurd</a>
       <nav>
         <a href="/about/">About</a>
+        <a href="/work/">Work</a>
         <a href="/notes/">Notes</a>
         <a href="https://github.com/hazurd">GitHub</a>
       </nav>
@@ -21,8 +22,47 @@
 
     <main>
       <section>
-        <h1>Under construction</h1>
-        <p class="muted">Nothing here yet. The site has no purpose until it is given one.</p>
+        <h1>Kubernetes &amp; GitOps that actually works</h1>
+        <p>
+          I build and rescue container infrastructure: production clusters from
+          scratch, GitOps migration with Argo CD, CI/CD pipelines that promote
+          dev to prod without babysitting, and observability that tells you the
+          truth instead of drowning you in noise.
+        </p>
+        <p>
+          Every engagement ships with working config <em>and</em> written docs,
+          so your team can run it after I hand off.
+        </p>
+      </section>
+
+      <section>
+        <h2>What I do</h2>
+        <ul>
+          <li>Production Kubernetes environment design &amp; setup (managed cloud or self-hosted)</li>
+          <li>GitOps migration: imperative deploys → Argo CD app projects</li>
+          <li>CI/CD pipeline design (GitHub Actions, GitLab CI, Jenkins)</li>
+          <li>Observability: Prometheus/Grafana or ELK, alerting worth keeping</li>
+          <li>Infrastructure audits: findings, severity ratings, prioritized roadmap</li>
+        </ul>
+        <p><a href="/work/">Services &amp; pricing →</a></p>
+      </section>
+
+      <section>
+        <h2>Proof</h2>
+        <ul>
+          <li><a href="https://github.com/hazurd/sample-kind-cluster">sample-kind-cluster</a> — working cluster with Traefik ingress and dashboard</li>
+          <li><a href="https://github.com/hazurd/argocd-appprojects">argocd-appprojects</a> — namespace-scoped GitOps app project configs</li>
+          <li><a href="https://github.com/hazurd/lambda_layer_whitelisting">lambda_layer_whitelisting</a> — AWS Lambda cross-account whitelisting tool</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Start a project</h2>
+        <p>
+          Email <a href="mailto:hazurd1@gmail.com">hazurd1@gmail.com</a> with a
+          sentence about your infrastructure problem. I reply within a day with
+          scope, price, and availability.
+        </p>
       </section>
     </main>
 
